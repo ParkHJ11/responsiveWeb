@@ -90,6 +90,10 @@ h1,h2,h3,h4,h5,h6 { font-size: 13px; font-weight: normal; }
 /* 반응형 이미지 */
 img { width: 100%; }
 
+/* clearfix */
+.clearfix:before, .clearfix:after { display: block; content: ''; line-height: 0; }
+.clearfix:after { clear: both; }
+
 /* IR효과 */
 .hide { position: absolute; left: -3000%; font-size: 0;}
 

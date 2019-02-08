@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/font-awesome.css">
     <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/lightgallery.css">
     
     <!-- Facebook meta tags -->
     <meta property="og:type" content="article" />
@@ -271,13 +272,24 @@
                     </article>
                     <!-- //col4 -->
                     <article class="column col5">
-                        <h4 class="col_tit">반응형 사이트 왼쪽 컨텐츠1</h4>
-                        <p class="col_desc">이 곳은 설명 부분입니다.</p>
-                        <!-- -->
+                        <h4 class="col_tit">Blend Effect</h4>
+                        <p class="col_desc">Background-blend-mode와 mix-blend-mode</p>
+                        <!-- lightbox -->
+                        <div class="lightbox square clearfix">
+                            <a href="images/light01_s.jpg"><img src="images/light01.jpg" alt="이미지1"></a>
+                            <a href="images/light02_s.jpg"><img src="images/light02.jpg" alt="이미지1"></a>
+                            <a href="images/light03_s.jpg"><img src="images/light03.jpg" alt="이미지1"></a>
+                            <a href="images/light04_s.jpg"><img src="images/light04.jpg" alt="이미지1"></a>
+                            <a href="images/light05_s.jpg"><img src="images/light05.jpg" alt="이미지1"></a>
+                            <a href="images/light06_s.jpg"><img src="images/light06.jpg" alt="이미지1"></a>
+                            <a href="images/light07_s.jpg"><img src="images/light07.jpg" alt="이미지1"></a>
+                            <a href="images/light08_s.jpg"><img src="images/light08.jpg" alt="이미지1"></a>
+                            <a href="images/light09_s.jpg"><img src="images/light09.jpg" alt="이미지1"></a>
+                            <a href="images/light010_s.jpg"><img src="images/light10.jpg" alt="이미지1"></a>
+                        </div>
                         
                         
-                        
-                        <!-- //  -->
+                        <!-- //lightbox  -->
                     </article>
                     <!-- //col5 -->
                     <article class="column col6">
@@ -343,6 +355,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="scripts/modernizr-custom.js"></script>
     <script src="scripts/slick.min.js"></script>
+    <script src="scripts/lightgallery.min.js"></script>
     <script>
         
         //http://www.facebook.com/sharer.php?u={페이지 제목}&t={페이지링크}
@@ -373,9 +386,17 @@
                         autoplay:false,
                     }
                 }
-            ]
+            ]            
+        });
+        
+        
+        //라이트 박스
+        $(".lightbox").lightGallery({
+            
             
         });
+        
+        
     </script>
 </body>
 </html>
